@@ -1,14 +1,20 @@
-# <a href="http://awesome-django.com"><img src="https://raw.githubusercontent.com/rosarior/awesome-django/gh-pages/images/logo-small.png" align="absmiddle"/> Awesome Django</a>
+# <a href="http://awesome-django.com"><img src="https://raw.githubusercontent.com/rosarior/awesome-django/gh-pages/images/logo-small.png" align="absmiddle"/> Awesome Django</a> [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+
+This project is being migrated to GitLab: https://gitlab.com/rosarior/awesome-django. This repository will be removed once all tickets are closed.
 
 A curated list of awesome Django apps, projects and resources. Inspired by and based on [awesome-python](https://github.com/vinta/awesome-python/).
+
+Twitter feed: [twitter.com/AwesomeDjango](https://twitter.com/AwesomeDjango)
 
 - [Awesome Django](#awesome-django)
     - [Admin Interface](#admin-interface)
     - [Asset Management](#asset-management)
     - [Authentication](#authentication)
     - [Authorization](#authorization)
+    - [Boilerplate](#boilerplate)
     - [Caching](#caching)
     - [Compatibility](#compatibility)
+    - [Data Sciences](#data-sciences)
     - [Database](#database)
     - [Debugging](#debugging)
     - [Email](#email)
@@ -81,6 +87,8 @@ A curated list of awesome Django apps, projects and resources. Inspired by and b
 * [django-gears](https://github.com/gears/django-gears/) - Compiles and concatenates JavaScript and CSS assets.
 * [django-htmlmin](https://github.com/cobrateam/django-htmlmin/) - HTML minifier for Python with full support for HTML 5 and Django.
 * [django-pipeline](https://github.com/cyberdelia/django-pipeline/) - Asset packaging for Django.
+* [django-webpack-loader](https://github.com/owais/django-webpack-loader/) - Transparent webpack integration for django.
+* [python-webpack](https://github.com/markfinger/python-webpack) - Python bindings for webpack with django integration.
 
 ## Authentication
 
@@ -102,9 +110,16 @@ A curated list of awesome Django apps, projects and resources. Inspired by and b
 * [django-guardian](https://github.com/lukaszb/django-guardian/) - Implementation of per object permissions as authorization backend.
 * [django-oauth-toolkit](https://github.com/evonove/django-oauth-toolkit) - OAuth2 goodies for the Djangonauts!
 * [django-oauth2-provider](https://github.com/caffeinehit/django-oauth2-provider) - Provide OAuth2 access to your app
-* [django-oml](https://github.com/RouteAtlas/django-oml/) - Object Moderation Layer, mixin for models that allows you moderate several content types.
+* [django-oml](https://github.com/angvp/django-oml/) - Object Moderation Layer, mixin for models that allows you moderate several content types.
 * [django-permission](https://github.com/lambdalisue/django-permission/) An enhanced permission library which enables a *logic-based permission system* to handle complex permissions in Django
 * [django-rules](https://github.com/dfunckt/django-rules) - A tiny but powerful app providing object-level permissions to Django, without requiring a database. At its core, it is a generic framework for building rule-based systems, similar to decision trees. It can also be used as a standalone library in other contexts and frameworks.
+
+## Boilerplate
+
+* Packages related to smart a new project starting.*
+
+* [cookiecutter](https://github.com/audreyr/cookiecutter/) - A command-line utility that creates projects from cookiecutters (project templates).
+* [django-hackathon-starter](https://github.com/DrkSephy/django-hackathon-starter) - A boilerplate for Django web applications, containing various social authentication methods and several popular API examples.
 
 ## Caching
 
@@ -123,6 +138,12 @@ A curated list of awesome Django apps, projects and resources. Inspired by and b
 
 * [django-compat](https://github.com/arteria/django-compat) - For- and backwards compatibility layer for Django 1.4 to 1.7.x.
 * [django-compat-lint](https://github.com/ubernostrum/django-compat-lint) - Check Django compatibility of your code.
+
+## Data sciences
+
+*Packages that make it easier to work with large volumes of data
+
+* [rest-pandas](https://github.com/wq/django-rest-pandas/) - Serves up your Pandas dataframes via the Django REST Framework for use in client-side (i.e. d3.js) visualizations and offline analysis (e.g. Excel). 
 
 ## Database
 
@@ -146,6 +167,7 @@ A curated list of awesome Django apps, projects and resources. Inspired by and b
 
 *Packages that help manage email sending.*
 
+* [django-db-mailer](https://github.com/LPgenerator/django-db-mailer/) - Django module to easily send email/sms/push/tts using django templates stored on database and managed through the Django Admin.
 * [django-celery-email](https://github.com/pmclanahan/django-celery-email/) - A Django email backend that uses a celery task for sending the email.
 * [django-drip](https://github.com/zapier/django-drip) - Django Admin based management for drip email campaigns
 * [django-mailgun](https://github.com/BradWhittington/django-mailgun/) - A Django email backend for Mailgun.
@@ -167,6 +189,7 @@ A curated list of awesome Django apps, projects and resources. Inspired by and b
 * [django-imagekit](https://github.com/matthewwithanm/django-imagekit/) - Automated image processing for Django.
 * [django-jsonfield](https://pypi.python.org/pypi/django-jsonfield) - JSONField for Django models.
 * [django-location-field](https://github.com/caioariede/django-location-field/) - Location field and widget integrated with google maps.
+* [django-macaddress] (https://github.com/tubaman/django-macaddress) - MAC Address model and form fields for Django.
 * [django-picklefield](https://github.com/gintas/django-picklefield/) - A pickled object field for Django
 * [django-uuidfield](https://github.com/dcramer/django-uuidfield/) - A UUIDField for Django.
 * [django-versatileimagefield](https://github.com/WGBH/django-versatileimagefield/) - A drop-in replacement for django's ImageField that provides a flexible, intuitive and easily-extensible interface for quickly creating new images from the one assigned to the field.
@@ -269,6 +292,7 @@ A curated list of awesome Django apps, projects and resources. Inspired by and b
 * [django-secure](https://github.com/carljm/django-secure/) - Helping you remember to do the stupid little things to improve your Django site's security.
 * [django-sslify](https://github.com/rdegges/django-sslify/) - Force SSL on your Django site.
 * [django-stronghold](https://github.com/mgrouchy/django-stronghold/) - Stronghold is middleware to default all your views to login required.
+* [django-secure-auth](https://github.com/gotlium/django-secure-auth) - Secure authentication by TOTP, SMS, Codes & Question. Login protection with ban by IP and captcha.
 
 ## SEO
 
@@ -301,6 +325,7 @@ A curated list of awesome Django apps, projects and resources. Inspired by and b
 ## Tagging
 
 * [django-taggit](https://github.com/alex/django-taggit/) - Simple tagging for Django.
+* [django-taggit-helpers](https://github.com/mfcovington/django-taggit-helpers) - Django admin helper classes for django-taggit tags.
 
 ## Task Queue
 
@@ -315,6 +340,7 @@ A curated list of awesome Django apps, projects and resources. Inspired by and b
 
 *Packages that help test code or generate test data.*
 
+* [hitchtest](http://hitchtest.com/) - High level integration testing framework for Django.
 * [django-behave](https://github.com/django-behave/django-behave/) - TestRunner for the Behave BDD module.
 * [django-faker](https://github.com/joke2k/django-faker/) - Fake-factory to generate test data.
 * [django-dynamic-fixture](https://github.com/paulocheque/django-dynamic-fixture) - A complete library to create dynamic model instances for testing purposes.
@@ -322,12 +348,13 @@ A curated list of awesome Django apps, projects and resources. Inspired by and b
 * [django-nose](https://github.com/django-nose/django-nose/) - Test runner using nose.
 * [django-selenium](https://github.com/dragoon/django-selenium/) - Selenium testing support.
 * [django-slowtests](https://github.com/realpython/django-discover-slowest-tests-runner/) - Locate your slowest tests.
+* [django-test-plus](https://github.com/revsys/django-test-plus) - Useful addons to Django's default TestCase that greatly reduces boilerplate code
 * [factory_boy](https://github.com/rbarrois/factory_boy/) - A test fixtures replacement for Python
 * [lettuce-django-terrain](https://github.com/stringfellow/lettuce-django-terrain/) - Terrain file for lettuce in django projects
+* [mock-django] (https://github.com/dcramer/mock-django) - A simple library for mocking certain Django behavior, such as the ORM.
 * [model-mommy](https://github.com/vandersonmota/model_mommy/) - Smart fixtures for better tests.
 * [pytest-django](https://pypi.python.org/pypi/pytest-django/) - Test runner using py.test
 * [splinter](https://github.com/cobrateam/splinter/) - Test framework for web applications.
-* [django-test-plus](https://github.com/revsys/django-test-plus) - Useful addons to Django's default TestCase that greatly reduces boilerplate code
 
 ## Thumbnail
 
@@ -341,7 +368,7 @@ A curated list of awesome Django apps, projects and resources. Inspired by and b
 
 *Packages help with the task of translating projects.*
 
-* [django-klingon](https://github.com/RouteAtlas/django-klingon/) - An attempt to make django model translations suckless and with no integrations pain in your app.
+* [django-klingon](https://github.com/angvp/django-klingon/) - An attempt to make django model translations suckless and with no integrations pain in your app.
 * [django-hvad](https://github.com/KristianOellegaard/django-hvad) - Painless translations in django, using the regular ORM. Integrates easily into existing projects and apps. Easy convertible from django-multilingual-ng.
 * [django-modeltranslation](https://github.com/deschler/django-modeltranslation/) - Translate dynamic content of existing Django models to an arbitrary number of languages without having to change the original model classes.
 * [django-parler](https://github.com/edoburu/django-parler) - Simple Django model translations without nasty hacks
@@ -352,6 +379,7 @@ A curated list of awesome Django apps, projects and resources. Inspired by and b
 *Packages that enhance or provide new view classes.*
 
 * [django-extra-views](https://github.com/AndrewIngram/django-extra-views/) - Django's class-based generic views are awesome, let's have more of them.
+* [django-vanilla-views](https://github.com/tomchristie/django-vanilla-views/) - Beautifully simple class-based views.
 
 ## Web frontend integration
 
@@ -387,7 +415,6 @@ A curated list of awesome Django apps, projects and resources. Inspired by and b
 
 ## Other
 
-* [cookiecutter](https://github.com/audreyr/cookiecutter/) - A command-line utility that creates projects from cookiecutters (project templates).
 * [dj-database-url](https://github.com/kennethreitz/dj-database-url/) - Utilize the 12factor inspired DATABASE_URL environment variable to configure your Django application.
 * [django-activeurl](https://github.com/hellysmile/django-activeurl) - Easy to use active URL highlighting for django
 * [django-activity-stream](https://github.com/justquick/django-activity-stream/) - Generate generic activity streams from the actions on your site. Users can follow any actors' activities for personalized streams.
@@ -417,6 +444,7 @@ A curated list of awesome Django apps, projects and resources. Inspired by and b
 * [micawber](https://github.com/coleifer/micawber/) - A small library for extracting rich content from urls.
 * [towel](https://github.com/matthiask/towel/) - a collection of tools which make your life easier if you are building a web application using Django.
 * [django-hackathon-starter](https://github.com/DrkSephy/django-hackathon-starter) - A boilerplate for Django web applications, containing various social authentication methods and several popular API examples.
+* [django-mmc](https://github.com/LPgenerator/django-mmc) - App for monitoring management commands on Django..
 
 # Projects
 
@@ -483,6 +511,10 @@ Where to discover new Django apps and projects.
 * [DjangoCon Europe](http://www.djangocon.eu/) - is the annual largest European-based Django conference that is usually held in late spring.
 * [DjangoCon US](http://www.djangocon.us/) - is the largest North American Django conference generally held the first week in September each year.
 
+# Non Python packages
+
+* [cookiecutter-django](https://github.com/pydanny/cookiecutter-django) - A cookiecutter template for creating Django projects quickly.
+
 ## External documentation
 
 *Additional sources of information about django features.*
@@ -493,6 +525,8 @@ Where to discover new Django apps and projects.
 
 * [Must Watch Django Videos](https://github.com/rosarior/django-must-watch/) - Must-watch videos about Django (or about Python as applied to Django)
 * [GoDjango](https://godjango.com) - Django videos from basics to advanced. Covering 3rd party apps to core Django compontents.
+* [CodingforEntrepreneur](https://www.codingforentrepreneurs.com/projects) - One of the best collection of Django Videos and all the projects are written in Django.
+* [One Month Django](https://onemonth.com) - The video series will teach you Django in one month
 
 # Utilities
 
